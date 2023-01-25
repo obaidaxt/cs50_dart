@@ -26,7 +26,7 @@ main() {
   // }
   for (int j = 1; j < 26; j++) {
     x += '#';
-
+// if (j%5==0)
     if (x.length==5) {
       print(x);
       x = '';
