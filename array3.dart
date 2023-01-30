@@ -40,7 +40,6 @@ main() {
   stdout.write('how many score? ');
   String? input = stdin.readLineSync();
   int length = int.parse(input!);
-  List<int> score = [1, 3, 5];
   int result = 0;
   for (int i = 0; i < length; i++) {
     stdout.write('number: ');
@@ -48,8 +47,7 @@ main() {
     String? input = stdin.readLineSync();
     int convert = int.parse(input!);
 
-    score[i] = convert;
-    result += score[i];
+    result += convert;
   }
-  print('the average is (${result ~/length})');
+  print('the average is (${result ~/ length})');
 }
